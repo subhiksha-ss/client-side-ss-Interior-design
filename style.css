@@ -1,0 +1,279 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dbdcdde0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+  font-family: "Clipper Script", cursive;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ab8261;
+  margin-bottom: 10px;
+}
+
+.logo .highlight {
+  color: #ab8261;
+}
+
+/* Layout Container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* Left - Login Box */
+.login-box {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #f8f5f8;
+  padding: 40px 30px ;
+  border-radius: 12px ;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.google-btn,
+.facebook-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #0d0c0c;
+  background: #d1dff5a5;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.google-btn:hover,
+.facebook-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.or {
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #888;
+}
+
+/* Form Inputs */
+.login-form input[type="email"],
+.password-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Password Wrapper (no toggle) */
+.password-wrapper {
+  position: relative;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.form-options a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.signup-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Right - Image Panel */
+.image-panel {
+  flex: 1;
+  min-width: 320px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-panel img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Forgot Password Page Styling */
+
+
+.forgot-container {
+  background-color: hsl(60, 14%, 99%);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.forgot-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.forgot-container p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.forgot-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.forgot-container label {
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.forgot-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.forgot-container button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-container button:hover {
+  background-color: #0056b3;
+}
+
+.back-link {
+  margin-top: 20px;
+}
+
+.back-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .login-box {
+    padding: 40px 20px;
+  }
+
+  .image-panel img {
+    height: auto;
+  }
+}
+
+/* Toast Message */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 40px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}

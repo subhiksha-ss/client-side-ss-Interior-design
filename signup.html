@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - SS Interior Design</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <header class="header">
+    SS Interior Design welcomes you
+  </header>
+
+  <main class="container">
+    <form class="signup-form" id="signupForm">
+      <h2><strong>Create Account</strong></h2>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Submit</button>
+      <p class="back-link">
+        <a href="index.html">Back to Login</a>
+      </p>
+    </form>
+  </main>
+
+  <div id="toast" class="toast">
+    <strong>Account created successfully!</strong>
+  </div>
+
+  <script src="js/signup.js"></script>
+</body>
+</html>

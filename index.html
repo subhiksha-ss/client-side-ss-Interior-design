@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SS Interior Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Clipper+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="login-container">
+        <div class="logo">SS <span class="highlight">Interior Design</span></div>
+
+        <h2>Log in to your Account</h2>
+        <p>Welcome back! Select method to log in:</p>
+
+        <div class="social-buttons">
+          <button class="google-btn">Google</button>
+          <button class="facebook-btn">Facebook</button>
+        </div>
+
+        <p class="or">or continue with email</p>
+
+        <!-- ✅ Form with correct ID -->
+        <form class="login-form" id="loginForm">
+          <input type="email" placeholder="Email" required />
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Password" required />
+          </div>
+
+          <div class="form-options">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="forgot-password.html">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">Log in</button>
+        </form>
+
+       <p class="signup-text">Don’t have an account? <a href="signup.html">Create an account</a></p>
+
+      </div>
+    </div>
+
+    <div class="image-panel">
+      <img src="images/side-image.jpg" alt="Interior Design" />
+    </div>
+  </div>
+
+  <!-- ✅ JavaScript for redirect -->
+  <script src="js/login-validation.js"></script>
+
+
+</body>
+</html>
